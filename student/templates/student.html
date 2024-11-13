@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="login  task.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<style>
+    /* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* margin: 50px; */
+    background: rgb(0, 233, 226);
+    background: linear-gradient(90deg, rgba(0, 233, 226, 1) 0%, rgba(183, 58, 196, 1) 53%, rgba(231, 0, 255, 1) 100%);
+}
+
+/* Container Styling */
+.container {
+    text-align: center ;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+/* Box Styling */
+.box {
+    background-color: #ffffff;
+    padding: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    width: 300px;
+    height: 550px;
+    padding-top: 100px;
+}
+
+/* Form Elements */
+input[type="text"],
+input[type="password"] {
+    width: 101%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 1px 1px #6f6969;
+    border: none;
+}
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none; /* Specifically removes outline on focus */
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background: rgb(0, 233, 226);
+    background: linear-gradient(90deg, rgba(0, 233, 226, 1) 0%, rgba(183, 58, 196, 1) 53%, rgba(231, 0, 255, 1) 100%);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #eef5ef;
+}
+
+.forgot-password {
+    text-align: right;
+    margin-top: 5px;
+}
+
+.forgot-password a {
+    font-size: 16px;
+    color: #0003c0;
+    text-decoration: none;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px 40px 10px 40px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input-container i {
+    position: absolute;
+    left: 10px; 
+    top: 50%;
+    transform: translateY(-50%);
+    color: #000000; 
+}
+
+.input-container label {
+    position: absolute;
+    left: 10px; 
+    top: -14px;
+    font-size: 16px;
+    color: #060606;
+}
+
+.sign-up{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.icons{
+    align-items: center;
+    margin-left: 100px;
+    margin-top: 30px;
+    font-size: 30px;
+
+}
+
+.sign-up2{
+    align-items: center;
+    margin-left: 100px;
+    margin-top: 150px;
+
+}
+
+.sign-up3{
+    align-items: center;
+    margin-left: 120px;
+    margin-top: 30px;
+}
+
+.sign-up3 a{
+    text-decoration: none;
+}
+
+
+</style>
+
+<body>
+    <div>
+        <div class="box">
+            <h1>Login</h1>
+            <form action="">
+                <div class="input-container">
+                    <input type="text" id="username" placeholder="Type your username" required>
+                    <i class="fa-regular fa-user"></i>
+                    <label for="username">Username</label>
+                </div>
+
+                <div class="input-container">
+                    <input type="password" id="password" placeholder="Type your Password" required>
+                    <i class="fa-solid fa-lock"></i>
+                    <label for="password">Password</label>
+                </div>
+
+                <div class="forgot-password">
+                    <label for=""> <a href="">forgot your password? </a> </label><br><br>
+                </div>
+
+                <button type="submit">Login</button><br><br>
+            <div class="sign-up">
+                <label for="">or sign up using</label>
+            </div>
+        <div class="icons">
+            <i class="fa-brands fa-facebook" style="color: #4267B2;"></i>
+            <i class="fa-brands fa-twitter" style="color: #1DA1F2;"></i>
+            <i class="fa-brands fa-google" style="color: #DB4437;"></i>
+        </div>
+
+        <div class="sign-up2">
+            <label for="">or sign up using</label>
+        </div>
+
+        <div class="sign-up3">
+            <label for=""> <a href="">SIGN UP </a></label>
+        </div>
+
+
+
+            <!-- </form> -->
+        </div>
+    </div>
+</body>
+
+</html>
